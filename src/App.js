@@ -18,21 +18,6 @@ const App = () => {
     getTodoList();
   }, []);
 
-  // const handleCheckBox = useCallback(async (todoId) => {
-  //   try {
-  //     setTodos((prevTodos) =>
-  //       prevTodos.map((todo) => {
-  //         if (todo._id === todoId) {
-  //           return { ...todo, completed: !todo.completed };
-  //         }
-  //         return todo;
-  //       })
-  //     );
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }, []);
-
   const getTodoList = async () => {
     try {
       const data = await fetchTodos();
@@ -74,27 +59,31 @@ const App = () => {
 
     if (data) {
       getTodoList();
-      setText("")
-      setIsUpdating(false)
+      setText("");
+      setIsUpdating(false);
     }
   }, [isUpdating, todoId, text]);
 
   return (
-    <div className="App">
-      <div className="container">
+    <div className="App min-h-screen  py-8 w-full">
+      <div className="container mx-auto">
         <Header />
-        <div className="top">
+        <div className="top flex items-center justify-center">
           <input
             type="text"
             placeholder="ADD TODO..."
             value={text}
             onChange={onInputChange}
+            className="px-4 py-2 border w-2/5 border-gray-300 rounded-lg focus:outline-none"
           />
-          <div className="add" onClick={onAddClick}>
+          <button
+            className="ml-2 px-4 py-2 bg-blue-500 text-white rounded-lg"
+            onClick={onAddClick}
+          >
             {isUpdating ? "UPDATE" : "ADD"}
-          </div>
+          </button>
         </div>
-        <div className="list">
+        <div className="list mt-8">
           {todos.length > 0 &&
             todos.map((item) => (
               <TodoList
@@ -103,8 +92,6 @@ const App = () => {
                 isCompleted={item.completed}
                 updateMode={() => updateMode(item._id, item.text)}
                 deleteToDo={() => handleDeleteTodo(item._id)}
-                //handleCheckBox={() => handleCheckBox(item._id)}
-                
               />
             ))}
         </div>

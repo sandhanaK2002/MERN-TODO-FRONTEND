@@ -1,5 +1,4 @@
 import React from "react";
-
 import { BiEdit } from "react-icons/bi";
 import { AiFillDelete } from "react-icons/ai";
 
@@ -10,25 +9,19 @@ export const TodoList = ({
   isCompleted,
   handleCheckBox,
 }) => {
-    return (
-        <div className="todo">
-        <div className="text">{text}</div>
-        <div className="icons">
-            <BiEdit className='icon' onClick={updateMode} />
-            <AiFillDelete className='icon' onClick={deleteToDo} />
-        </div>
+  return (
+    <div className="w-2/4 mx-auto flex items-center justify-between bg-white px-4 py-2 mb-4 rounded-lg shadow">
+      <div className="text">{text}</div>
+      <div className="icons flex flex-row">
+        <BiEdit
+          className="text-blue-500 cursor-pointer"
+          onClick={updateMode}
+        />
+        <AiFillDelete
+          className="text-red-500 cursor-pointer ml-2"
+          onClick={deleteToDo}
+        />
+      </div>
     </div>
-
-
-
-//   <div className="todo">
-//     <div className="row">
-//       <div className={`${isCompleted ? "completed" : ""} name`}>{text}</div>
-//     </div>
-//     <div className="icons">
-//       <BiEdit className="icon edit" onClick={updateMode} />
-//       <AiFillDelete className="icon delete" onClick={deleteToDo} />
-//     </div>
-//   </div>
-      );
+  );
 };
