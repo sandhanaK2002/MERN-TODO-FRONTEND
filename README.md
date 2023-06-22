@@ -5,9 +5,9 @@
 
 It includes the following:
 
-Backend  with Express & MongoDB
-React frontend 
-React Tailwind UI library
+*Backend  with Express & MongoDB
+*React frontend 
+*React Tailwind UI library
 
 
 ### `npm start`
