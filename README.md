@@ -1,15 +1,15 @@
 # MERN - TODO APP
 
-## Available Scripts![todoassesment](https://github.com/sandhanaK2002/MERN-TODO-FRONTEND/assets/127848485/2985757e-3a40-4644-ba0b-e517b9cc1174)
+##![todoassesment](https://github.com/sandhanaK2002/MERN-TODO-FRONTEND/assets/127848485/2985757e-3a40-4644-ba0b-e517b9cc1174)
 
 
 It includes the following:
 
-*Backend  with Express & MongoDB
+* Backend  with Express & MongoDB
 
-*React frontend 
+* React frontend 
 
-*React Tailwind UI library
+* React Tailwind UI library
 
 
 ### `npm start`
