@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseurl = process.env.baseurl ||  "http://localhost:8000/api/todos"
+const baseurl = process.env.REACT_APP_BASEURL ||  "https://mern-todo-backend-3fs1.onrender.com/api/todos"
 
 export const fetchTodos = async () => {
   try {
