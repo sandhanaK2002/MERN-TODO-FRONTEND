@@ -29,10 +29,16 @@ PORT = 8000
 MONGO_URI = your mongodb uri
 
 
-### `npm test`
+### `Install Dependencies (frontend & backend)`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<div style="border: 1px solid black; padding: 10px;">
+  npm install
+  
+  cd frontend
+
+  npm install
+</div>
+
 
 ### `npm run build`
 
