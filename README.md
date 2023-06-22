@@ -5,8 +5,10 @@
 
 It includes the following:
 
--Backend  with Express & MongoDB
+*Backend  with Express & MongoDB
+
 *React frontend 
+
 *React Tailwind UI library
 
 
