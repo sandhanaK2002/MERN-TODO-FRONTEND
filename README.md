@@ -1,6 +1,6 @@
 # MERN - TODO APP
 
-##![todoassesment](https://github.com/sandhanaK2002/MERN-TODO-FRONTEND/assets/127848485/2985757e-3a40-4644-ba0b-e517b9cc1174)
+![todoassesment](https://github.com/sandhanaK2002/MERN-TODO-FRONTEND/assets/127848485/2985757e-3a40-4644-ba0b-e517b9cc1174)
 
 
 It includes the following:
@@ -11,8 +11,13 @@ It includes the following:
 
 * React Tailwind UI library
 
+---
 
-### `npm start`
+***
+
+___
+
+### `Env Variables`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
