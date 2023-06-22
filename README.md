@@ -21,8 +21,11 @@ ___
 
 
 [![Copy File](https://img.shields.io/badge/Copy-File-blue?style=flat-square)](file-url)
+function test() {
+  console.log("NODE_ENV = development");
+}
 
-NODE_ENV = development
+
 
 PORT = 8000
 
